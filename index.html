@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babybett kaufen im 2. oder 3. Trimester: 5 Kriterien | tweeto</title>
-    <!-- Фирменный шрифт Quicksand -->
+    <!-- Einbindung der Markenschriftart Quicksand -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #5ba2b4;
-            --text-color: #444;
-            --light-bg: #f4f8f9;
-            --max-width: 800px;
+            --text-color: #333333;
+            --bg-light: #f4f8f9;
+            --max-width: 780px;
         }
 
         body {
@@ -20,21 +20,27 @@
             font-family: 'Quicksand', sans-serif;
             line-height: 1.8;
             color: var(--text-color);
-            background-color: #fff;
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
         }
 
+        /* Header */
         header {
             padding: 20px;
             text-align: center;
-            background: #fff;
-            border-bottom: 1px solid #eee;
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        .logo img { max-width: 120px; height: auto; }
+        .logo img {
+            max-width: 140px;
+            height: auto;
+        }
 
+        /* Container */
         .container {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -43,118 +49,186 @@
 
         .breadcrumb {
             font-size: 13px;
-            color: #999;
-            margin-bottom: 15px;
+            color: #999999;
+            margin-bottom: 20px;
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         h1 {
-            font-size: 32px;
-            line-height: 1.3;
-            color: #333;
+            font-size: 36px;
+            line-height: 1.25;
+            color: #1a1a1a;
             text-align: center;
             margin-bottom: 30px;
             font-weight: 700;
         }
 
-        .meta {
+        .meta-info {
             text-align: center;
             font-size: 14px;
-            color: #777;
-            margin-bottom: 30px;
+            color: #777777;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 20px;
         }
 
+        /* Typography */
+        h2 {
+            font-size: 28px;
+            color: var(--primary-color);
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: 35px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        /* Images */
         .article-img {
             width: 100%;
             height: auto;
             border-radius: 12px;
-            margin: 35px 0;
+            margin: 40px 0;
             display: block;
         }
 
-        h2 {
-            font-size: 26px;
-            color: var(--primary-color);
-            margin-top: 50px;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        h3 {
-            font-size: 20px;
-            margin-top: 30px;
-            color: #333;
-            font-weight: 600;
-        }
-
-        p { margin-bottom: 20px; }
-
+        /* Highlight Boxes */
         .highlight-box {
-            background: var(--light-bg);
-            border-left: 5px solid var(--primary-color);
-            padding: 25px;
+            background: var(--bg-light);
+            border-left: 6px solid var(--primary-color);
+            padding: 30px;
             margin: 40px 0;
-            border-radius: 0 10px 10px 0;
+            border-radius: 0 12px 12px 0;
         }
 
-        .expert-note {
+        .highlight-box h3 {
+            margin-top: 0;
+        }
+
+        .expert-quote {
             background: #fff5f6;
             border: 1px dashed #e8aeba;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 30px 0;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 40px 0;
+            font-style: italic;
         }
 
-        .expert-note strong { color: #d08b99; display: block; margin-bottom: 5px; }
+        .expert-quote strong {
+            color: #d08b99;
+            font-style: normal;
+            display: block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
 
         .praxis-note {
             background: #eef7ff;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 30px 0;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 40px 0;
         }
 
-        .praxis-note strong { color: #5b8fb4; display: block; margin-bottom: 5px; }
+        .praxis-note strong {
+            color: #5b8fb4;
+            display: block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
 
-        .cta-wrapper {
+        /* Lists */
+        ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        /* CTA Section */
+        .cta-section {
             text-align: center;
-            margin: 60px 0;
-            background: var(--light-bg);
-            padding: 40px;
+            margin: 80px 0;
+            background: var(--bg-light);
+            padding: 50px 30px;
             border-radius: 20px;
         }
 
         .btn-primary {
             background-color: var(--primary-color);
-            color: white;
-            padding: 18px 35px;
+            color: #ffffff;
+            padding: 22px 45px;
             text-decoration: none;
             font-weight: 700;
             border-radius: 50px;
-            font-size: 18px;
-            transition: 0.3s;
+            font-size: 20px;
+            transition: all 0.3s ease;
             display: inline-block;
+            box-shadow: 0 10px 20px rgba(91, 162, 180, 0.2);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(91, 162, 180, 0.3);
+            box-shadow: 0 15px 30px rgba(91, 162, 180, 0.4);
         }
 
+        /* Footer */
         footer {
-            background: #333;
-            color: #fff;
-            padding: 50px 20px;
+            background: #333333;
+            color: #ffffff;
+            padding: 60px 20px;
             text-align: center;
+        }
+
+        footer img {
+            max-width: 100px;
+            filter: brightness(0) invert(1);
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            margin-bottom: 30px;
+        }
+
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            margin: 0 15px;
             font-size: 14px;
         }
 
-        footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
 
+        /* Responsive */
         @media (max-width: 600px) {
-            h1 { font-size: 24px; }
-            h2 { font-size: 22px; }
-            .container { padding: 20px 15px; }
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            p, li { font-size: 17px; }
+            .container { padding: 30px 15px; }
         }
     </style>
 </head>
@@ -162,103 +236,156 @@
 
 <header>
     <div class="logo">
-        <img src="https://tweeto.de/cdn/shop/files/tweeto.svg?height=160&v=1755886451" alt="tweeto">
+        <img src="https://tweeto.de/cdn/shop/files/tweeto.svg?height=160&v=1755886451" alt="tweeto Logo">
     </div>
 </header>
 
 <div class="container">
-    <div class="breadcrumb">Magazin — Babyzimmer Planung</div>
+    <div class="breadcrumb">Magazin — Babyzimmer Ratgeber</div>
+    
     <h1>Babybett kaufen im 2. oder 3. Trimester: 5 Kriterien, die Sicherheit, Platz und Folgekosten wirklich entscheiden</h1>
     
-    <div class="meta">Lesedauer: 8 Minuten | Aktualisiert am 24. Mai 2024</div>
+    <div class="meta-info">
+        Lesezeit: ca. 9 Minuten | Veröffentlicht von der tweeto Redaktion
+    </div>
 
     <p>Im zweiten oder dritten Trimester wird das Babyzimmer plötzlich konkret.</p>
 
     <p>Die ersten Bodys liegen bereit. Vielleicht ist der Kinderwagen schon ausgesucht. Und dann kommt eine der Entscheidungen, bei der viele werdende Eltern länger hängen bleiben als erwartet: <strong>Welches Babybett passt wirklich zu unserem Kind, zu unserem Zuhause und zu den nächsten Jahren?</strong></p>
 
-    <img src="https://tweeto.de/cdn/shop/files/Banner_Tweeto_Design_Babybett_2.webp?v=1775494973&width=3840" alt="tweeto Babybett Design" class="article-img">
+    <p>Auf den ersten Blick wirken viele Modelle ähnlich. Oval, rund, modern, mitwachsend, natürlich, hochwertig. Doch genau hier beginnt die Unsicherheit.</p>
 
-    <p>Auf den ersten Blick wirken viele Modelle ähnlich. Oval, rund, modern, mitwachsend, natürlich, hochwertig. Doch genau hier beginnt die Unsicherheit. Denn ein Babybett soll nicht nur schön aussehen, es soll sicher und stabil sein.</p>
+    <p>Denn ein Babybett soll nicht nur schön aussehen. Es soll sicher sein. Stabil. Frei von bedenklichen Materialien. Es soll in die Wohnung passen, auch wenn das Kinderzimmer nicht besonders groß ist. Es soll den Alltag leichter machen — und nicht nach wenigen Monaten durch neue Möbel, Erweiterungssets oder weiteres Zubehör ersetzt werden müssen.</p>
+
+    <p>Gerade beim ersten Kind ist es schwer einzuschätzen, was man wirklich braucht und welche Details später teuer, unpraktisch oder störend werden können.</p>
+
+    <img src="https://tweeto.de/cdn/shop/files/Banner_Tweeto_Design_Babybett_2.webp?v=1775494973&width=3840" alt="tweeto Babybett im Kinderzimmer" class="article-img">
 
     <h2>Warum die Wahl des Babybetts oft schwieriger ist als gedacht</h2>
 
-    <p>Viele Eltern starten mit einer einfachen Idee: „Wir brauchen ein schönes, sicheres Bettchen für die ersten Monate.“ Doch Babys wachsen schnell. Aus der kleinen Wiege wird bald ein größeres Bett. Danach braucht es vielleicht ein Laufgitter. Später eine kleine Sofa-Ecke oder einen Kindertisch.</p>
+    <p>Viele Eltern starten mit einer einfachen Idee:</p>
+    <p>„Wir brauchen ein schönes, sicheres Bettchen für die ersten Monate.“</p>
     
-    <p>Was am Anfang wie eine einzelne Anschaffung aussieht, kann über die Jahre zu mehreren Käufen werden. Dazu kommt das Thema Sicherheit: Eltern möchten vermeiden, dass ihr Baby in einem Bett schläft, das wackelt, scharfe Kanten hat или из ungeprüften Materialien состоит.</p>
+    <p>Doch Babys wachsen schnell. Aus der kleinen Wiege wird bald ein größeres Bett. Danach braucht es vielleicht ein Laufgitter. Später eine kleine Sofa-Ecke oder einen Kindertisch. Dazu kommen Matratzen, Umbauteile, Zubehör, Rollen, Textilien und passende Möbel.</p>
+    
+    <p>Was am Anfang wie eine einzelne Anschaffung aussieht, kann über die Jahre zu mehreren Käufen werden.</p>
+    
+    <p>Dazu kommt ein zweiter Punkt: Sicherheit.</p>
+    
+    <p>Eltern möchten vermeiden, dass ihr Baby in einem Bett schläft, das wackelt, scharfe Kanten hat, aus ungeprüften Materialien besteht oder schlecht belüftet ist. Besonders bei Möbeln aus MDF, Spanplatte oder unklar lackierten Oberflächen stellt sich schnell die Frage: Was befindet sich wirklich im direkten Umfeld meines Kindes?</p>
+    
+    <p>Deshalb lohnt es sich, beim Babybett nicht nur auf Form und Farbe zu achten, sondern auf die Konstruktion dahinter.</p>
 
     <h2>Drei versteckte Fallen beim Kauf eines mitwachsenden Babybetts</h2>
 
+    <p>Nicht jedes „mitwachsende“ Babybett wächst wirklich so lange mit, wie es auf den ersten Blick wirkt. Viele Modelle sind schön inszeniert, aber im Alltag zeigen sich später kleine Schwächen, die man vor dem Kauf leicht übersieht.</p>
+
     <div class="highlight-box">
         <h3>1. Die Erweiterungsset-Falle</h3>
-        <p>Einige ovale Babybetten wirken zunächst preislich attraktiv. Häufig reicht die Einstiegsversion jedoch nur für die ersten Monate. Wenn das Kind größer wird, braucht man zusätzliche Elemente: Seitenteile, Erweiterungssets, Matratzen. Dadurch wird aus einem vermeintlich klaren Kauf schnell eine Reihe weiterer Ausgaben.</p>
+        <p>Einige ovale oder kompakte Babybetten wirken zunächst preislich attraktiv oder besonders hochwertig. Häufig reicht die Einstiegsversion jedoch nur für die ersten Monate.</p>
+        <p>Wenn das Kind größer wird, braucht man zusätzliche Elemente: größere Seitenteile, Erweiterungssets, zusätzliche Matratzen, Umbauteile oder weiteres Zubehör.</p>
+        <p>Dadurch wird aus einem vermeintlich klar kalkulierbaren Kauf schnell eine Reihe weiterer Ausgaben.</p>
+        <p>Für Eltern ist deshalb entscheidend: <strong>Welche Funktionen sind wirklich von Anfang an enthalten — und welche müssen später separat gekauft werden?</strong></p>
+        <p>Ein durchdachtes Babybett sollte nicht nur „mitwachsend“ heißen. Es sollte die wichtigsten Umbaumöglichkeiten bereits von Beginn an mitbringen.</p>
     </div>
 
     <h3>2. Die Ästhetik-Falle</h3>
-    <p>Viele industriell gefertigte Betten haben sichtbare technische Bohrungen или Montageöffnungen am äußeren Rahmen. Auf Produktbildern fallen diese Details kaum auf. Im echten Kinderzimmer sieht man sie jedoch jeden Tag.</p>
+    <p>Bei Babybetten wird viel über Farbe, Form und Stil gesprochen. Weniger offensichtlich ist die Frage, wie sauber die Konstruktion tatsächlich aussieht.</p>
+    <p>Viele industriell gefertigte Betten haben sichtbare technische Bohrungen, Schraubpunkte oder Montageöffnungen am äußeren Rahmen. Auf Produktbildern fallen diese Details oft kaum auf. Im echten Kinderzimmer sieht man sie jedoch jeden Tag.</p>
+    <p>Gerade Eltern, die ein ruhiges, hochwertiges und harmonisches Babyzimmer gestalten möchten, achten zunehmend auf solche Details.</p>
+    <p>Ein Babybett steht nicht irgendwo im Hintergrund. Es ist meist das zentrale Möbelstück im Raum. Deshalb sollte es nicht nur funktional sein, sondern auch optisch sauber verarbeitet wirken — wie ein Möbelstück, das bewusst ausgewählt wurde und sich selbstverständlich in den Raum einfügt.</p>
 
     <h3>3. Die Material-Falle</h3>
-    <p>Beim Babybett geht es nicht nur um Stabilität. MDF, Spanplatten или не ясно сертифицированные лаки могут быть фактором риска. Wichtig sind natürliches Holz, geprüfte Lacke и kindgerechte Oberflächen.</p>
+    <p>Beim Babybett geht es nicht nur um Stabilität. Es geht auch darum, welche Materialien das Kind täglich umgeben.</p>
+    <p>MDF, Spanplatten oder nicht klar zertifizierte Lacke können für Eltern ein Unsicherheitsfaktor sein — besonders dann, wenn Herkunft, Verarbeitung und Oberflächenbehandlung nicht transparent erklärt werden.</p>
+    <p>Wichtig sind daher:</p>
+    <ul>
+        <li>Natürliches, stabiles Holz</li>
+        <li>Geprüfte Lacke</li>
+        <li>Kindgerechte Oberflächen</li>
+        <li>Keine scharfen Kanten</li>
+        <li>Nachvollziehbare Sicherheitsstandards</li>
+    </ul>
 
     <h2>Die 5 goldenen Kriterien für ein durchdachtes Babybett</h2>
+
+    <p>Wer im zweiten oder dritten Trimester ein Babybett auswählt, sollte sich nicht von einzelnen Bildern oder kurzfristigen Angeboten leiten lassen. Hilfreicher ist eine klare Checkliste. Diese fünf Kriterien zeigen, worauf Eltern achten sollten.</p>
+
+    <img src="https://tweeto.de/cdn/shop/files/tweeto_Produktbild_7in1_BG.png?v=1776856728&width=1600" alt="tweeto 7-in-1 Babybett Funktionen" class="article-img">
 
     <h3>Kriterium 1: Echte Multifunktionalität von Anfang an</h3>
     <p>Ein gutes mitwachsendes Babybett sollte im Alltag wirklich mehrere Möbelstücke ersetzen können. Besonders sinnvoll ist eine Lösung, die vom ersten Tag an mehrere Phasen abdeckt: Stubenwagen, Beistellbett, Mini-Kinderbett, Standard-Kinderbett, Laufgitter, Kindersofa sowie Tisch mit zwei Stühlen.</p>
     
-    <img src="https://tweeto.de/cdn/shop/files/tweeto_Produktbild_7in1_BG.png?v=1776856728&width=1600" alt="tweeto 7-in-1 Transformationen" class="article-img">
-
-    <p>Ebenso wertvoll ist eine erweiterbare Wippfunktion. Wenn sich das Bettchen in eine Wiege verwandeln lässt, kann sanftes Schaukeln dem Baby helfen, leichter zur Ruhe zu kommen.</p>
+    <p>Der große Vorteil: Eltern müssen nicht für jede neue Phase ein neues Möbelstück suchen. In den ersten Monaten ist Nähe wichtig. Ein Beistellbett kann den Alltag erleichtern. Später braucht das Kind mehr Platz. Danach wird ein Laufgitter praktisch. Und wenn das Babybett irgendwann nicht mehr als Bett genutzt wird, kann es als Sofa oder Kindertisch weiter im Zimmer bleiben.</p>
+    
+    <p>Ebenso wertvoll ist eine erweiterbare Wippfunktion. Wenn sich das Bettchen in eine Wiege oder Wippe verwandeln lässt, kann sanftes Schaukeln dem Baby helfen, leichter zur Ruhe zu kommen.</p>
+    
+    <p>Auch die Höhenverstellung gehört zu den Funktionen, die man im Alltag schnell schätzt. Bei einem Neugeborenen ist eine höhere Liegeposition angenehmer. Wenn das Kind aktiver wird, kann die Liegefläche entsprechend angepasst werden.</p>
 
     <h3>Kriterium 2: Massivholz Buche und europäische Manufaktur</h3>
-    <p>Massivholz Buche ist besonders robust и langlebig. Ein Bett aus europäischer Manufakturproduktion wird mit mehr Aufmerksamkeit für Details gefertigt. Wenn ein Babybett bis zu 120 kg belastbar ist, zeigt das, dass es auf jahrelange Nutzung ausgelegt ist.</p>
+    <p>Ein Babybett muss stabil sein. Massivholz Buche ist dafür ein besonders geeignetes Material. Es ist robust, langlebig und wirkt gleichzeitig natürlich und warm. Im Vergleich zu leichteren Holzwerkstoffen vermittelt massives Buchenholz mehr Stabilität und Substanz.</p>
+    
+    <p>Noch wichtiger ist die Verarbeitung. Ein Bett aus europäischer Manufakturproduktion wird nicht einfach anonym in Masse gefertigt. Es entsteht mit mehr Aufmerksamkeit für Details, sauberere Übergänge und kontrollierte Verarbeitungsschritte.</p>
+    
+    <p>Wenn ein Babybett bis zu 120 kg belastbar ist, zeigt das zusätzlich, dass es auf längere Nutzung ausgelegt ist.</p>
 
-    <img src="https://tweeto.de/cdn/shop/files/tweeto_Banynett_Gitterbett_7-in-1_Buche_Massiv.png?v=1773745829&width=1200" alt="Massivholz Details" class="article-img">
+    <img src="https://tweeto.de/cdn/shop/files/tweeto_Banynett_Gitterbett_7-in-1_Buche_Massiv.png?v=1773745829&width=1200" alt="Detailansicht Massivholz Buche" class="article-img">
 
-    <h3>Kriterium 3: Sicherheit nach DIN EN 716</h3>
-    <p>Ein wichtiger Orientierungspunkt ist die Norm DIN EN 716. Дополнительно родители должны обратить внимание на: geprüfte Lacke, sichere Abstände der Gitterstäbe und keine scharfen Kanten.</p>
+    <h3>Kriterium 3: Sicherheit nach DIN EN 716 und kindersichere Lacke</h3>
+    <p>Ein wichtiger Orientierungspunkt ist die Norm <strong>DIN EN 716</strong>. Sie definiert Sicherheitsanforderungen für Kinderbetten. Zusätzlich sollten Eltern auf geprüfte, kindersichere Lacke, sichere Abstände zwischen den Gitterstäben und glatte Oberflächen achten.</p>
 
-    <div class="expert-note">
+    <div class="expert-quote">
         <strong>Hebammen-Hinweis:</strong>
-        Eine ovale Form ohne scharfe Ecken und korrekt bemessene Abstände zwischen den Gitterstäben sind besonders wichtig, sobald sich ein Baby aktiver bewegt.
+        Eine ovale Form ohne scharfe Ecken und korrekt bemessene Abstände zwischen den Gitterstäben sind besonders wichtig, sobald sich ein Baby aktiver bewegt, dreht oder im Schlaf seine Position verändert. Genau solche Details reduzieren typische Risiken im Alltag und geben Eltern mehr Sicherheit bei der Nutzung.
     </div>
 
     <h3>Kriterium 4: Ein sauberer Look ohne sichtbare Montagelöcher</h3>
-    <p>Ein hochwertig wirkendes Babybett sollte klare Formen и möglichst unsichtbare Montagelösungen haben. So bleibt das Bett nicht nur ein praktisches Möbelstück, sondern wird Teil eines stimmigen Kinderzimmers.</p>
+    <p>Ein Babyzimmer soll Ruhe ausstrahlen. Sichtbare Montageöffnungen oder viele technische Bohrungen können das Gesamtbild schnell unruhig machen. Besonders bei ovalen Formen fällt eine saubere Linienführung auf.</p>
+    <p>Ein hochwertig wirkendes Babybett sollte deshalb nicht nur stabil konstruiert sein, sondern auch von außen harmonisch aussehen. Das bedeutet: klare Form, ruhige Linien und möglichst unsichtbare Montagelösungen.</p>
 
     <h3>Kriterium 5: Guter Luftaustausch und leise Mobilität</h3>
-    <p>Eine atmungsaktive Holzunterlage unterstützt die Luftzirkulation unter der Matratze. Für Eltern ist außerdem Mobilität wichtig: Das Babybett braucht Rollen, die sich leicht и leise bewegen lassen.</p>
-    
-    <img src="https://tweeto.de/cdn/shop/files/tweet_babybet_combi_Beistellbett_Rollen.webp?v=1772545925&width=1600" alt="tweeto Rollen" class="article-img">
+    <p>Eine atmungsaktive Holzunterlage unterstützt die Luftzirkulation unter der Matratze. Für Eltern ist außerdem Mobilität ein unterschätzter Vorteil. Dafür braucht ein Babybett Rollen, die sich leicht und leise bewegen lassen. Hochwertige, geräuschlose Räder machen im Alltag einen spürbaren Unterschied.</p>
+
+    <img src="https://tweeto.de/cdn/shop/files/tweet_babybet_combi_Beistellbett_Rollen.webp?v=1772545925&width=1600" alt="Leise Rollen für Babybett" class="article-img">
 
     <div class="praxis-note">
         <strong>Praxis-Hinweis für werdende Eltern:</strong>
-        Entscheidend ist, ob die Rollen leise sind. Gerade nachts или во время дневного сна этот маленький нюанс играет огромную роль.
+        Achten Sie nicht nur darauf, ob ein Babybett Rollen hat. Entscheidend ist, ob sie leise, stabil und im Alltag angenehm zu bewegen sind. Gerade nachts oder während des Mittagsschlafs kann dieser kleine Unterschied sehr wichtig werden.
     </div>
 
     <h2>Wie ein Babybett all diese Kriterien verbinden kann</h2>
-    <p>Genau mit diesem Anspruch wurde die transformierbare Babybett-Serie von Tweeto entwickelt. Es ist ein 7-in-1-Babybett aus massivem Buchenholz, handgefertigt in einer europäischen Manufaktur и соответствует норме DIN EN 716.</p>
+    <p>Genau mit diesem Anspruch wurde die transformierbare Babybett-Serie von Tweeto entwickelt. Tweeto ist ein 7-in-1-Babybett aus massivem Buchenholz, handgefertigt in einer europäischen Manufaktur. Es entspricht der Norm DIN EN 716 und wird mit zertifizierten Lacken veredelt.</p>
+    
+    <p>Aus einem Möbelstück entstehen mehrere Nutzungsmöglichkeiten: Stubenwagen, Beistellbett, Mini-Kinderbett, Standard-Kinderbett, Laufgitter, Kindersofa sowie Tisch mit 2 Stühlen.</p>
+    
+    <p>Dazu kommen erweiterbare Funktionen wie die Wippfunktion. Das Bettchen kann dadurch in eine sanft schwingende Schlaflösung verwandelt werden. Auch die Höhenverstellung macht den Alltag leichter.</p>
 
-    <div class="cta-wrapper">
-        <h2>Bereit für den tweeto Konfigurator?</h2>
-        <p>Wählen Sie aus 9 Standardtönen или индивидуальных цветов.</p>
+    <h2>Ein durchdachtes System für moderne Familien: Alles in einem Stil</h2>
+    <p>Ein Bett, das mehrere Funktionen übernimmt, spart Platz, reduziert Folgekosten und verhindert, dass Eltern immer wieder neue Einzelmöbel suchen müssen. Dazu kommt der gestalterische Vorteil: Wenn Bett, Kommode, Wickeltisch und Textilien in einem Stil geplant werden können, wirkt das Zimmer ruhiger.</p>
+    
+    <p>Tweeto bietet dafür eine passende Möbelwelt: Zur 7-in-1-Krippe lassen sich Kommode, Wickeltisch und Textilien im einheitlichen Stil kombinieren. Ein praktischer Vorteil kommt hinzu: Der Versand erfolgt direkt ab Lager in Deutschland.</p>
+
+    <h2>Eine ruhige Entscheidung für die ersten Jahre</h2>
+    <p>Das richtige Babybett sollte Ihrem Baby einen sicheren Schlafplatz geben und in Ihre Wohnung passen. Wenn ein Bett mehrere Möbelstücke ersetzt, aus natürlichen Materialien besteht und europäische Sicherheitsstandards erfüllt, entsteht ein Nutzen, der weit über die ersten Monate hinausgeht.</p>
+
+    <div class="cta-section">
+        <h2>Entdecken Sie Ihre passende Konfiguration</h2>
+        <p>Gestalten Sie jetzt Ihr individuelles Babyzimmer mit dem 7-in-1-System.</p>
         <a href="https://tweeto.de/products/7-in-1-baby-bed" class="btn-primary">Zum Konfigurator auf tweeto.de</a>
     </div>
 
-    <p style="text-align: center; font-size: 12px; color: #aaa;">Anzeige / Advertorial</p>
+    <p style="text-align: center; color: #999999; font-size: 13px;">Anzeige / Advertorial — Ein Service von tweeto</p>
 </div>
 
 <footer>
-    <div style="margin-bottom: 20px;">
-        <img src="https://tweeto.de/cdn/shop/files/tweeto.svg?height=160&v=1755886451" alt="tweeto" style="filter: brightness(0) invert(1); max-width: 100px;">
-    </div>
-    <div class="links">
+    <img src="https://tweeto.de/cdn/shop/files/tweeto.svg?height=160&v=1755886451" alt="tweeto Logo">
+    <div class="footer-links">
         <a href="https://tweeto.de/policies/legal-notice">Impressum</a>
         <a href="https://tweeto.de/policies/privacy-policy">Datenschutz</a>
         <a href="https://tweeto.de/policies/refund-policy">Widerrufsrecht</a>
     </div>
-    <p style="margin-top: 30px; opacity: 0.6;">&copy; 2026 tweeto Babywelt. Alle Rechte vorbehalten.</p>
+    <p style="opacity: 0.5; font-size: 12px;">&copy; 2026 tweeto. Alle Rechte vorbehalten.</p>
 </footer>
 
-</body>
-</html>
 </body>
 </html>
